@@ -2,26 +2,87 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My App</title>
+  <title>Stylish Counter App</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #4facfe, #00f2fe);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      width: 280px;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    #count {
+      font-size: 40px;
+      margin: 20px 0;
+      color: #333;
+    }
+
+    button {
+      padding: 10px 15px;
+      margin: 5px;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .inc {
+      background: #28a745;
+      color: white;
+    }
+
+    .dec {
+      background: #dc3545;
+      color: white;
+    }
+
+    button:hover {
+      transform: scale(1.1);
+    }
+  </style>
 </head>
 
-<body style="text-align:center; font-family:sans-serif; margin-top:50px;">
-  <h1>📱 Counter App</h1>
-  <h2 id="count">0</h2>
+<body>
 
-  <button onclick="increase()">➕ Increase</button>
-  <button onclick="decrease()">➖ Decrease</button>
+  <div class="card">
+    <h1>📱 Counter App</h1>
+    <h2 id="count">0</h2>
+
+    <button class="inc" onclick="increase()">➕ Increase</button>
+    <button class="dec" onclick="decrease()">➖ Decrease</button>
+  </div>
 
   <script>
     let count = 0;
+
     function increase() {
       count++;
       document.getElementById("count").innerText = count;
     }
+
     function decrease() {
       count--;
       document.getElementById("count").innerText = count;
     }
   </script>
+
 </body>
 </html>
