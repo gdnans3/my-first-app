@@ -1,8 +1,16 @@
 {
   "name": "Calculator App",
   "short_name": "Calc",
-  "start_url": "./"
+  "start_url": "./",
+  "scope": "./",
   "display": "standalone",
   "background_color": "#222222",
-  "theme_color": "#222222"
+  "theme_color": "#222222",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
 }
