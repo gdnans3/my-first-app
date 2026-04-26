@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="manifest" href="manifest.json">
- 
   <title>Calculator App</title>
+
   <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
 </head>
+
 <body>
 
 <div class="calculator">
@@ -38,10 +39,13 @@
 </div>
 
 <script src="script.js"></script>
+
+<!-- Service Worker -->
 <script>
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('service-worker.js');
 }
 </script>
+
 </body>
 </html>
