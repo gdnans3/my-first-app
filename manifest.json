@@ -1,7 +1,7 @@
 {
   "name": "Calculator App",
   "short_name": "Calc",
-  "start_url": "index.html",
+  "start_url": "./"
   "display": "standalone",
   "background_color": "#222222",
   "theme_color": "#222222"
